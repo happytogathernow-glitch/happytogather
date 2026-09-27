@@ -672,6 +672,7 @@
 })();
 
 (function(){
+  var HTG_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbx9MVm0_SrdI1KL9INIBYo6wltnUe-H1qwrU2Bn_bE2ixbDipDCZRjshluKX2KmPeKvTA/exec';
   var form = document.getElementById('facSurvey');
   if (!form) return;
   var status = document.getElementById('facSurveyStatus');
@@ -693,9 +694,25 @@
     ];
     var subject = lang === 'en' ? 'Facilitator interest \u2014 happytogather.es' : 'Interés en ser facilitador/a \u2014 happytogather.es';
     var body = lines.join('\n');
-    var mailto = 'mailto:happytogathernow@gmail.com?cc=arigrubel@gmail.com&subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    if (status) status.textContent = lang === 'en' ? 'Opening your email...' : 'Abriendo tu correo...';
-    window.location.href = mailto;
+    var fields = lines.map(function(l){ var i = l.indexOf(': '); return [l.slice(0, i), l.slice(i + 2)]; });
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
+    if (status) status.textContent = lang === 'en' ? 'Sending...' : 'Enviando...';
+    fetch(HTG_FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ form: 'facilitadores', lang: lang, subject: subject, body: body, fields: fields, page: location.href })
+    })
+      .then(function(r){ return r.json(); })
+      .then(function(res){
+        if (!res || !res.ok) throw new Error('failed');
+        if (status) status.textContent = lang === 'en' ? 'Thank you! We received your message and will get back to you soon.' : '\u00a1Gracias! Hemos recibido tu mensaje y te responderemos pronto.';
+        form.reset();
+      })
+      .catch(function(){
+        if (status) status.textContent = lang === 'en' ? 'Something went wrong. Please try again or email us at happytogathernow@gmail.com.' : 'Algo ha fallado. Int\u00e9ntalo de nuevo o escr\u00edbenos a happytogathernow@gmail.com.';
+      })
+      .then(function(){ if (btn) btn.disabled = false; });
   });
 })();
 </script>
