@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -8,21 +8,22 @@
 <meta property="og:image" content="https://happytogathernow.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
 <meta property="og:site_name" content="Happy to Gather">
-<title>Eventos Sociales en Barcelona | Happy to Gather</title>
-<meta name="description" content="Conoce gente nueva y haz amigos de verdad en nuestros eventos sociales de conexión humana en Barcelona. Nuevos encuentros cada mes.">
-<link rel="canonical" href="https://happytogathernow.com/eventos.html">
-<link rel="alternate" hreflang="es" href="https://happytogathernow.com/eventos.html">
-<link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/events.html">
-<link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/eventos.html">
+<title>Contact | Happy to Gather</title>
+<meta name="description" content="Let&#x27;s talk: team building, collaborations, sponsorships or bringing Happy to Gather to your city. We reply personally.">
+<link rel="canonical" href="https://happytogathernow.com/en/contact.html">
+<link rel="alternate" hreflang="es" href="https://happytogathernow.com/contacto.html">
+<link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/contacto.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Eventos Sociales en Barcelona | Happy to Gather">
-<meta property="og:description" content="Conoce gente nueva y haz amigos de verdad en nuestros eventos sociales de conexión humana en Barcelona. Nuevos encuentros cada mes.">
-<meta property="og:url" content="https://happytogathernow.com/eventos.html">
+<meta property="og:url" content="https://happytogathernow.com/en/contact.html">
+<meta property="og:title" content="Contact | Happy to Gather">
+<meta property="og:description" content="Let&#x27;s talk: team building, collaborations, sponsorships or bringing Happy to Gather to your city. We reply personally.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Eventos Sociales en Barcelona | Happy to Gather">
-<meta name="twitter:description" content="Conoce gente nueva y haz amigos de verdad en nuestros eventos sociales de conexión humana en Barcelona. Nuevos encuentros cada mes.">
+<meta name="twitter:title" content="Contact | Happy to Gather">
+<meta name="twitter:description" content="Let&#x27;s talk: team building, collaborations, sponsorships or bringing Happy to Gather to your city. We reply personally.">
 <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
@@ -30,7 +31,6 @@
 @font-face{font-family:"Bricolage Grotesque";font-style:normal;font-display:swap;font-weight:200 800;src:url(/fonts/bricolage-grotesque-latin-opsz-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
 @font-face{font-family:"Permanent Marker";font-style:normal;font-display:swap;font-weight:400;src:url(/fonts/permanent-marker-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
 </style>
-
 <style>
   :root{
     --bg: #FBF7F1; --surface: #FFFFFF; --ink: #1E1B17; --ink-soft: #71675C;
@@ -67,12 +67,35 @@
   .ic-orange{background:var(--orange);}
   .ic-blue{background:var(--blue);}
   .ic-pink{background:var(--pink);color:var(--ink);}
-  .expand-strip{display:flex;align-items:center;gap:22px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px 32px;flex-wrap:wrap;}
-  .expand-strip p{margin:0;color:var(--ink-soft);font-size:1.02rem;max-width:520px;}
-  .expand-strip strong{color:var(--ink);}
-  .expand-strip .btn{flex:none;margin-left:auto;}
-  @media (max-width:700px){.expand-strip{padding:24px;} .expand-strip .btn{margin-left:0;}}
-
+  .ic-muted{background:var(--line);color:var(--ink-soft);}
+  .mini-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px;}
+  .mini-stat{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:0.94rem;color:var(--ink-soft);}
+  .mini-stat .pillar-icon{width:38px;height:38px;}
+  @media (max-width:760px){.mini-stat-row{grid-template-columns:1fr;}}
+  .check-list{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px;}
+  .check-list li{position:relative;padding-left:28px;font-size:0.98rem;color:var(--ink);}
+  .check-list li::before{content:"\2713";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--orange);color:#fff;font-size:0.72rem;display:flex;align-items:center;justify-content:center;}
+  .survey-card{background:var(--surface);border:none;box-shadow:none;border-radius:24px;padding:clamp(24px,4vw,48px);display:flex;flex-direction:column;gap:28px;}
+  .survey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media (max-width:900px){.survey-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.survey-grid{grid-template-columns:1fr;}}
+  .survey-field{position:relative;display:flex;flex-direction:column;gap:9px;font-size:0.86rem;font-weight:700;color:var(--ink);min-width:0;}
+  .survey-field>span:first-child{min-height:2.4em;line-height:1.25;display:flex;align-items:flex-start;}
+  .survey-field select{width:100%;min-width:0;font-family:inherit;font-size:0.95rem;font-weight:500;padding:14px 38px 14px 16px;border-radius:14px;border:none;box-shadow:none;background:var(--bg);color:var(--ink);appearance:none;-webkit-appearance:none;-moz-appearance:none;cursor:pointer;}
+  .survey-field select:focus{outline:2px solid var(--focus);outline-offset:2px;}
+  .survey-field.has-select::after{content:"";position:absolute;right:16px;bottom:20px;width:8px;height:8px;border-right:2px solid var(--ink-soft);border-bottom:2px solid var(--ink-soft);transform:rotate(45deg);pointer-events:none;}
+  .survey-field input[type="text"], .survey-field input[type="email"], .survey-field input[type="tel"], .survey-field textarea{width:100%;min-width:0;font-family:inherit;font-size:0.95rem;font-weight:500;padding:14px 16px;border-radius:14px;border:none;box-shadow:none;background:var(--bg);color:var(--ink);cursor:text;}
+  .survey-field textarea{resize:vertical;min-height:96px;}
+  .survey-field input:focus, .survey-field textarea:focus{outline:2px solid var(--focus);outline-offset:2px;}
+  .survey-checks{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px;}
+  .survey-checks label{display:flex;align-items:center;gap:7px;background:var(--bg);border:none;box-shadow:none;border-radius:999px;padding:10px 18px;font-size:0.86rem;font-weight:500;color:var(--ink-soft);cursor:pointer;transition:background .15s ease,color .15s ease;}
+  .survey-checks label:has(input:checked){background:var(--orange);color:#fff;}
+  .survey-checks label:hover{color:var(--ink);}
+  .survey-checks input{accent-color:var(--orange);}
+  .survey-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center;}
+  .survey-actions .btn{white-space:normal;text-align:center;max-width:100%;}
+  .survey-actions .btn{cursor:pointer;}
+  #surveyStatus{font-size:0.88rem;color:var(--ink-soft);}
   .pillar-card{display:flex;flex-direction:column;gap:2px;}
   .pillar-card .pillar-icon{margin-bottom:10px;}
   .offer .pillar-icon{margin-bottom:16px;}
@@ -263,6 +286,17 @@
     .step-grid{grid-template-columns:1fr;}
   }
 </style>
+
+<style>
+  .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start;}
+  @media (max-width:900px){.contact-grid{grid-template-columns:1fr;gap:36px;}}
+  .contact-side{display:flex;flex-direction:column;gap:24px;}
+  .contact-alt{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px 28px;}
+  .contact-alt h3{font-size:1.05rem;letter-spacing:-0.005em;}
+  .contact-alt p{color:var(--ink-soft);margin-top:8px;font-size:0.95rem;}
+  .contact-alt .btn{margin-top:16px;}
+</style>
+
 <header>
   <nav class="wrap">
     <a href="index.html" class="brand">
@@ -270,141 +304,94 @@
       <span>Happy&nbsp;to&nbsp;Gather</span>
     </a>
     <ul class="navlinks">
-      <li><a href="#top" class="current" data-i18n="nav_eventos">Eventos sociales</a></li><li><a href="equipos.html" data-i18n="nav_equipos">Equipos</a></li><li><a href="colaboraciones.html" data-i18n="nav_colab">Colaboraciones</a></li><li><a href="nosotros.html" data-i18n="nav_nosotros">Nosotros</a></li><li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+      <li><a href="events.html" data-i18n="nav_eventos">Social events</a></li><li><a href="teams.html" data-i18n="nav_equipos">For teams</a></li><li><a href="collaborations.html" data-i18n="nav_colab">Collaborations</a></li><li><a href="about.html" data-i18n="nav_nosotros">About</a></li><li><a href="#top" class="current" data-i18n="nav_contacto">Contact</a></li>
     </ul>
     <div class="navcta">
       <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
-        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
-      <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener"><span data-i18n="nav_cta">Próximos eventos</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener"><span data-i18n="nav_cta">Upcoming events</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
   <div class="mobile-panel" id="mobilePanel">
     <ul class="mobile-navlinks">
-      <li><a href="#top" class="current" data-i18n="nav_eventos">Eventos sociales</a></li><li><a href="equipos.html" data-i18n="nav_equipos">Equipos</a></li><li><a href="colaboraciones.html" data-i18n="nav_colab">Colaboraciones</a></li><li><a href="nosotros.html" data-i18n="nav_nosotros">Nosotros</a></li><li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+      <li><a href="events.html" data-i18n="nav_eventos">Social events</a></li><li><a href="teams.html" data-i18n="nav_equipos">For teams</a></li><li><a href="collaborations.html" data-i18n="nav_colab">Collaborations</a></li><li><a href="about.html" data-i18n="nav_nosotros">About</a></li><li><a href="#top" class="current" data-i18n="nav_contacto">Contact</a></li>
     </ul>
-    <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener" style="margin:4px 0 4px;width:calc(100% - 8px);justify-content:center;"><span data-i18n="nav_cta">Próximos eventos</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener" style="margin:4px 0 4px;width:calc(100% - 8px);justify-content:center;"><span data-i18n="nav_cta">Upcoming events</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div>
 </header>
 <main id="top">
 
-  <section class="hero" style="border-top:none;">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow" data-i18n="hero_eyebrow">Eventos sociales &middot; Barcelona</span>
-        <h1 class="headline"><span class="hero-tag" data-i18n="hero_tag">Conoce gente</span><br><span data-i18n="hero_line2">y haz amigos de verdad.</span></h1>
-        <p class="hero-sub" data-i18n="hero_sub">Encuentros diseñados para crear conexiones reales &mdash; sin presión, sin incomodidad, desde el primer momento.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener"><span data-i18n="hero_cta1">Quiero venir al próximo</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-          <a class="btn btn-ghost" href="#experiencia" data-i18n="hero_cta2">Cómo funciona</a>
-        </div>
-        <div class="stat-row">
-          <div><div class="stat-num">20+</div><div class="stat-label" data-i18n="stat1_label">eventos realizados</div></div>
-          <div><div class="stat-num">100s</div><div class="stat-label" data-i18n="stat2_label">de conexiones creadas</div></div>
-          <div><div class="stat-num">5.0</div><div class="stat-label" data-i18n="stat3_label">valoración media</div></div>
-        </div>
-      </div>
-      <div class="hero-photo-wrap">
-        <figure class="polaroid rot-2">
-          <img src="/img/dos-personas-conociendose-y.webp" alt="Dos personas conociendose y conectando en un evento de Happy to Gather" loading="eager">
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section id="experiencia" class="tint-blue">
-    <div class="wrap split reverse">
-      <div class="split-photo"><figure class="polaroid rot-1"><img src="/img/dos-personas-conectando-experiencia.webp" alt="Dos personas conectando en una experiencia de Happy to Gather" loading="lazy"></figure></div>
-      <div class="split-text">
-        <span class="kicker" data-i18n="exp_kicker">La experiencia</span>
-        <p class="philosophy-quote"><em data-i18n="exp_em">Llegas sin conocer a nadie.</em> <span data-i18n="exp_rest">Y empiezas a conectar desde el primer momento.</span></p>
-        <p class="philosophy-body" data-i18n="exp_body">Sin presión. Sin incomodidad. Cada evento está diseñado para que la conversación fluya sola &mdash; nosotros ponemos la estructura, tú solo tienes que aparecer.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="diferente">
+  <section class="hero" style="border-top:none;padding-bottom:56px;">
     <div class="wrap">
-      <div class="section-head">
-        <span class="kicker" data-i18n="diff_kicker">Qué lo hace diferente</span>
-        <h2 class="section-title" data-i18n="diff_title">No organizamos eventos. Creamos razones para conectar.</h2>
-      </div>
-      <div class="pillar-grid" style="grid-template-columns:repeat(4,1fr);">
-        <div class="pillar-card"><span class="pillar-icon ic-orange"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17.3" cy="9" r="2.3"/><path d="M15.6 14.6c2.4.5 4.1 2.4 4.1 5.2"/></svg></span><span class="pillar-num">01</span><h3 data-i18n="diff1_h">Conectas con todo el grupo</h3><p data-i18n="diff1_p">No solo con quien llegaste. Con todos.</p></div>
-        <div class="pillar-card"><span class="pillar-icon ic-blue"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5h14v8.2H9.4L5 17.5v-3.8H3z"/></svg></span><span class="pillar-num">02</span><h3 data-i18n="diff2_h">Conversaciones que fluyen</h3><p data-i18n="diff2_p">Dinámicas guiadas, cero silencios incómodos.</p></div>
-        <div class="pillar-card"><span class="pillar-icon ic-pink"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3s-7.4-4.5-9.7-8.9C.8 8 2 4.6 5.1 3.7c2.2-.6 4.1.4 4.9 2.1.8-1.7 2.7-2.7 4.9-2.1 3.1.9 4.3 4.3 2.7 7.7-2.3 4.4-9.6 8.9-9.6 8.9z"/></svg></span><span class="pillar-num">03</span><h3 data-i18n="diff3_h">Ambiente cercano y sin juicio</h3><p data-i18n="diff3_p">Un espacio donde se puede bajar la guardia.</p></div>
-        <div class="pillar-card"><span class="pillar-icon ic-orange"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-4 2 2-6 4-2z"/></svg></span><span class="pillar-num">04</span><h3 data-i18n="diff4_h">Facilitación profesional</h3><p data-i18n="diff4_p">Alguien del equipo HTG guía cada momento.</p></div>
-      </div>
+      <span class="eyebrow" data-i18n="hero_eyebrow">Contact</span>
+      <h1 class="headline" style="max-width:760px;"><span class="hero-tag" data-i18n="hero_tag">Let's talk.</span> <span data-i18n="hero_line2">Human to human.</span></h1>
+      <p class="hero-sub" style="max-width:640px;" data-i18n="hero_sub">Team building, collaborations, sponsorships, bringing Happy to Gather to your city, or just a question — tell us and we'll reply personally, not a bot.</p>
     </div>
   </section>
 
-  <section id="testimonio">
-    <div class="wrap">
-      <div class="quotes">
-        <div class="quote-card">
-          <span class="quote-mark">&rdquo;</span>
-          <p data-i18n="testi_q">Esto debería existir en todas las ciudades.</p>
-          <span class="quote-who">Nuria C.</span>
+  <section style="border-top:none;padding-top:0;">
+    <div class="wrap contact-grid">
+      <form class="survey-card" id="contactForm">
+        <div class="survey-grid" style="grid-template-columns:1fr;">
+          <label class="survey-field has-select">
+            <span data-i18n="c_type">What type of project is it?</span>
+            <select name="cType">
+              <option data-i18n="c_type_o1">Team building / corporate event</option>
+              <option data-i18n="c_type_o2">Social event</option>
+              <option data-i18n="c_type_o3">I want to sponsor — brand visibility</option>
+              <option data-i18n="c_type_o4">I want to sponsor — support the project</option>
+              <option data-i18n="c_type_o5">Creative collaboration or retreat</option>
+              <option data-i18n="c_type_o6">I want to be a facilitator in my city</option>
+              <option data-i18n="c_type_o7">Other</option>
+            </select>
+          </label>
         </div>
-        <div class="quote-card">
-          <span class="quote-mark">&rdquo;</span>
-          <p data-i18n="testi2_q">Happy to Gather es perfecto para cuando te mudas a una ciudad nueva, o si ya llevas tiempo ahí y todavía no encontraste tu sitio. Orgullosa de haber sido parte del primerísimo encuentro &mdash; la mayoría seguimos en contacto, así que no hay duda: ¡funciona! No puedo esperar a verlo en otras ciudades.</p>
-          <span class="quote-who">Emilia</span>
+        <div class="survey-grid">
+          <label class="survey-field">
+            <span data-i18n="c_name">Your name</span>
+            <input type="text" name="cName" required data-i18n-placeholder="c_name_ph" placeholder="Full name">
+          </label>
+          <label class="survey-field">
+            <span data-i18n="c_company">Company (optional)</span>
+            <input type="text" name="cCompany" data-i18n-placeholder="c_company_ph" placeholder="Your company or brand name">
+          </label>
+          <label class="survey-field">
+            <span data-i18n="c_email">Email</span>
+            <input type="email" name="cEmail" required data-i18n-placeholder="c_email_ph" placeholder="you@email.com">
+          </label>
+          <label class="survey-field">
+            <span data-i18n="c_phone">Phone</span>
+            <input type="tel" name="cPhone" data-i18n-placeholder="c_phone_ph" placeholder="+1 555 000 0000">
+          </label>
         </div>
-        <div class="quote-card">
-          <span class="quote-mark">&rdquo;</span>
-          <p data-i18n="testi3_q">¡Un evento fantástico! No solo lo pasé genial, sino que terminé siendo parte de la comunidad, donde siempre hay planes nuevos y oportunidades para reencontrarte con la gente que conociste. He ido dos veces y cada una ha sido una experiencia distinta. Las actividades hacen que conectar y charlar sea mucho más fácil, sin silencios incómodos. Una cosa es segura: vas a pasar una tarde genial y muy divertida.</p>
-          <span class="quote-who">Sabrina</span>
+        <div class="survey-field">
+          <span data-i18n="c_msg">Tell us more</span>
+          <textarea name="cMsg" data-i18n-placeholder="c_msg_ph" placeholder="Your idea, your dates, your approximate budget..."></textarea>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="survey-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="c_send">Send</button>
+          <span id="contactStatus"></span>
+        </div>
+      </form>
 
-  <section id="faq">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker" data-i18n="faq_kicker">Antes de venir</span>
-        <h2 class="section-title" data-i18n="faq_title">Preguntas frecuentes</h2>
-      </div>
-      <div class="faq">
-        <details open>
-          <summary data-i18n="faq1_q">¿Tengo que hablar mucho?</summary>
-          <p data-i18n="faq1_a">No. Todo fluye de forma natural &mdash; la dinámica hace el trabajo por ti.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq2_q">¿Cuánta gente hay?</summary>
-          <p data-i18n="faq2_a">Grupos pequeños y cuidados, pensados para que nadie se quede fuera de la conversación.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq3_q">¿Qué pasa después del evento?</summary>
-          <p data-i18n="faq3_a">Seguimos conectando a través de la comunidad &mdash; muchas amistades continúan mucho después.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-    <section id="expansion">
-    <div class="wrap">
-      <div class="expand-strip">
-        <span class="pillar-icon ic-blue"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.6 7-12a7 7 0 10-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span>
-        <p><strong data-i18n="expand_h">¿Quieres Happy to Gather en tu ciudad?</strong><br><span data-i18n="expand_p">Buscamos aliados para llevar experiencias de conexión humana — eventos sociales o colaboraciones — más allá de Barcelona.</span></p>
-        <a class="btn btn-ghost" href="nosotros.html#facilitadores" data-i18n="expand_cta">Cuéntanos</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <div class="wrap">
-      <div class="cta-band">
-        <img class="cta-bg" src="/img/eventos-foto.webp" alt="" aria-hidden="true" loading="lazy">
-        <span class="stamp">¡Ven!</span>
-        <h2 data-i18n="cta_h2">¿Vienes al próximo?</h2>
-        <p class="lede" data-i18n="cta_lede">Nuevos encuentros cada mes en Barcelona. Reserva tu lugar antes de que se llene.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener"><span data-i18n="cta_btn1">Quiero venir al próximo</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <div class="contact-side">
+        <div class="contact-alt">
+          <h3 data-i18n="c_alt1_h">Prefer to book directly?</h3>
+          <p data-i18n="c_alt1_p">Book a 15-minute call and let's talk about your project without waiting for an email reply.</p>
+          <a class="btn btn-ghost" href="https://cal.com/ariela-grubel/30min" target="_blank" rel="noopener"><span data-i18n="c_alt1_cta">Book a call</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+        <div class="contact-alt">
+          <h3 data-i18n="c_alt2_h">Prefer WhatsApp?</h3>
+          <p data-i18n="c_alt2_p">Message us directly and we'll reply in person, no forms.</p>
           <a class="btn btn-ghost" href="https://wa.me/34624009916" target="_blank" rel="noopener">WhatsApp<svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+        <div class="contact-alt">
+          <h3 data-i18n="c_alt3_h">Email us</h3>
+          <p data-i18n="c_alt3_p">happytogathernow@gmail.com</p>
+          <a class="btn btn-ghost" href="mailto:happytogathernow@gmail.com?cc=arigrubel@gmail.com"><span data-i18n="c_alt3_cta">Open my email</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         </div>
       </div>
     </div>
@@ -423,11 +410,12 @@
     <ul class="foot-links">
       <li><a href="https://www.instagram.com/happytogather.now" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;">Instagram<svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></li>
       <li><a href="https://www.linkedin.com/company/happy-to-gather" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;">LinkedIn<svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></li>
-      <li><a href="nosotros.html" data-i18n="footer_about">Sobre nosotros</a></li>
+      <li><a href="about.html" data-i18n="footer_about">About us</a></li>
       <li><a href="mailto:happytogathernow@gmail.com?cc=arigrubel@gmail.com" style="display:inline-flex;align-items:center;gap:5px;"><span data-i18n="footer_email">Email</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></li>
     </ul>
   </div>
-</footer><script>
+</footer>
+<script>
 (function(){
   var dict = {
     nav_home: ["Inicio","Home"],
@@ -436,53 +424,47 @@
     nav_colab: ["Colaboraciones","Collaborations"],
     nav_nosotros: ["Nosotros","About"],
     nav_contacto: ["Contacto","Contact"],
-    nav_cta: ["Ver próximos eventos","See upcoming events"],
+    nav_cta: ["Próximos eventos","Upcoming events"],
     footer_about: ["Sobre nosotros","About us"],
     footer_email: ["Email","Email"],
-    hero_eyebrow: ["Eventos sociales · Barcelona","Social events · Barcelona"],
-    hero_tag: ["Conoce gente","Meet people"],
-    hero_line2: ["y haz amigos de verdad.","and make real friends."],
-    hero_sub: ["Encuentros diseñados para crear conexiones reales — sin presión, sin incomodidad, desde el primer momento.","Gatherings designed to create real connection — no pressure, no awkwardness, from the very first moment."],
-    hero_cta1: ["Quiero venir al próximo","I want to join the next one"],
-    hero_cta2: ["Cómo funciona","How it works"],
-    stat1_label: ["eventos realizados","events hosted"],
-    stat2_label: ["de conexiones creadas","connections made"],
-    stat3_label: ["valoración media","average rating"],
-    exp_kicker: ["La experiencia","The experience"],
-    exp_em: ["Llegas sin conocer a nadie.","You arrive knowing no one."],
-    exp_rest: ["Y empiezas a conectar desde el primer momento.","And start connecting from the very first moment."],
-    exp_body: ["Sin presión. Sin incomodidad. Cada evento está diseñado para que la conversación fluya sola — nosotros ponemos la estructura, tú solo tienes que aparecer.","No pressure. No awkwardness. Every event is designed so conversation flows on its own — we bring the structure, you just have to show up."],
-    diff_kicker: ["Qué lo hace diferente","What makes it different"],
-    diff_title: ["No organizamos eventos. Creamos razones para conectar.","We don't just throw events. We create reasons to connect."],
-    diff1_h: ["Conectas con todo el grupo","You connect with the whole group"],
-    diff1_p: ["No solo con quien llegaste. Con todos.","Not just the person you came with. Everyone."],
-    diff2_h: ["Conversaciones que fluyen","Conversations that flow"],
-    diff2_p: ["Dinámicas guiadas, cero silencios incómodos.","Guided dynamics, zero awkward silences."],
-    diff3_h: ["Ambiente cercano y sin juicio","A close, judgment-free vibe"],
-    diff3_p: ["Un espacio donde se puede bajar la guardia.","A space where it's safe to let your guard down."],
-    diff4_h: ["Facilitación profesional","Professional facilitation"],
-    diff4_p: ["Alguien del equipo HTG guía cada momento.","Someone from the HTG team guides every moment."],
-    testi_q: ["Esto debería existir en todas las ciudades.","This should exist in every city."],
-    testi2_q: ["Happy to Gather es perfecto para cuando te mudas a una ciudad nueva, o si ya llevas tiempo ahí y todavía no encontraste tu sitio. Orgullosa de haber sido parte del primerísimo encuentro — la mayoría seguimos en contacto, así que no hay duda: ¡funciona! No puedo esperar a verlo en otras ciudades.","Happy to Gather is perfect for when you move to a new city, or if you've been around for a while and still haven't found your crew. Proud to have been part of the very first gathering — most of us are still in touch, so there's no doubt: it works! Can't wait to see this happening in other cities!"],
-    testi3_q: ["¡Un evento fantástico! No solo lo pasé genial, sino que terminé siendo parte de la comunidad, donde siempre hay planes nuevos y oportunidades para reencontrarte con la gente que conociste. He ido dos veces y cada una ha sido una experiencia distinta. Las actividades hacen que conectar y charlar sea mucho más fácil, sin silencios incómodos. Una cosa es segura: vas a pasar una tarde genial y muy divertida.","Fantastic event! Not only did I have a great time, but I actually ended up being part of the community, where there are constantly new plans and opportunities to reconnect with the people I met. I've been there twice and every single time has been a different experience. Having the activities also made it way easier to connect and chat without uncomfortable silences. One thing is certain: you'll have a great and funny afternoon."],
-    faq_kicker: ["Antes de venir","Before you come"],
-    faq_title: ["Preguntas frecuentes","Frequently asked questions"],
-    faq1_q: ["¿Tengo que hablar mucho?","Do I have to talk a lot?"],
-    faq1_a: ["No. Todo fluye de forma natural — la dinámica hace el trabajo por ti.","No. Everything flows naturally — the format does the work for you."],
-    faq2_q: ["¿Cuánta gente hay?","How many people show up?"],
-    faq2_a: ["Grupos pequeños y cuidados, pensados para que nadie se quede fuera de la conversación.","Small, carefully sized groups, so no one gets left out of the conversation."],
-    faq3_q: ["¿Qué pasa después del evento?","What happens after the event?"],
-    faq3_a: ["Seguimos conectando a través de la comunidad — muchas amistades continúan mucho después.","We keep connecting through the community — many friendships carry on long after."],
-    cta_h2: ["¿Vienes al próximo?","Joining the next one?"],
-    cta_lede: ["Nuevos encuentros cada mes en Barcelona. Reserva tu lugar antes de que se llene.","New gatherings every month in Barcelona. Grab your spot before it fills up."],
-    cta_btn1: ["Quiero venir al próximo","I want to join the next one"],
-    expand_h: ["¿Quieres Happy to Gather en tu ciudad?","Want Happy to Gather in your city?"],
-    expand_p: ["Buscamos aliados para llevar experiencias de conexión humana — eventos sociales o colaboraciones — más allá de Barcelona.","We are looking for partners to bring human-connection experiences — social events or collaborations — beyond Barcelona."],
-    expand_cta: ["Cuéntanos","Tell us"]
-};
+    hero_eyebrow: ["Contacto","Contact"],
+    hero_tag: ["Hablemos.","Let's talk."],
+    hero_line2: ["Humano a humano.","Human to human."],
+    hero_sub: ["Team building, colaboraciones, sponsors, llevar Happy to Gather a tu ciudad o simplemente una pregunta — cuéntanos y te respondemos personalmente, no un bot.","Team building, collaborations, sponsorships, bringing Happy to Gather to your city, or just a question — tell us and we'll reply personally, not a bot."],
+    c_type: ["¿Qué tipo de proyecto es?","What type of project is it?"],
+    c_type_o1: ["Team building / evento corporativo","Team building / corporate event"],
+    c_type_o2: ["Evento social","Social event"],
+    c_type_o3: ["Quiero ser sponsor — visibilizar mi marca","I want to sponsor — brand visibility"],
+    c_type_o4: ["Quiero ser sponsor — apoyar el proyecto","I want to sponsor — support the project"],
+    c_type_o5: ["Colaboración creativa o retiro","Creative collaboration or retreat"],
+    c_type_o6: ["Quiero ser facilitador/a en mi ciudad","I want to be a facilitator in my city"],
+    c_type_o7: ["Otro","Other"],
+    c_name: ["Tu nombre","Your name"],
+    c_name_ph: ["Nombre y apellido","Full name"],
+    c_company: ["Empresa (opcional)","Company (optional)"],
+    c_company_ph: ["Nombre de tu empresa o marca","Your company or brand name"],
+    c_email: ["Email","Email"],
+    c_email_ph: ["tu@email.com","you@email.com"],
+    c_phone: ["Teléfono","Phone"],
+    c_phone_ph: ["+34 600 000 000","+1 555 000 0000"],
+    c_msg: ["Cuéntanos más","Tell us more"],
+    c_msg_ph: ["Tu idea, tus fechas, tu presupuesto aproximado...","Your idea, your dates, your approximate budget..."],
+    c_send: ["Enviar","Send"],
+    c_alt1_h: ["¿Prefieres agendar directamente?","Prefer to book directly?"],
+    c_alt1_p: ["Reserva una llamada de 15 minutos y hablamos sobre tu proyecto sin esperar a que te respondamos por email.","Book a 15-minute call and let's talk about your project without waiting for an email reply."],
+    c_alt1_cta: ["Reservar una llamada","Book a call"],
+    c_alt2_h: ["¿Prefieres WhatsApp?","Prefer WhatsApp?"],
+    c_alt2_p: ["Escríbenos directamente y te respondemos en persona, sin formularios.","Message us directly and we'll reply in person, no forms."],
+    c_alt3_h: ["Escríbenos por email","Email us"],
+    c_alt3_p: ["happytogathernow@gmail.com","happytogathernow@gmail.com"],
+    c_alt3_cta: ["Abrir mi correo","Open my email"]
+  };
+
   var LANG_KEY = "htg_site_lang";
   var els = document.querySelectorAll("[data-i18n]");
+  var placeholderEls = document.querySelectorAll("[data-i18n-placeholder]");
   var buttons = document.querySelectorAll("[data-set-lang]");
+
   function syncInternalLinks(lang){
     document.querySelectorAll('a[href]').forEach(function(a){
       var href = a.getAttribute('href');
@@ -495,6 +477,7 @@
       } catch(e){}
     });
   }
+
   function apply(lang){
     var idx = lang === "en" ? 1 : 0;
     els.forEach(function(el){
@@ -502,11 +485,17 @@
       var pair = dict[key];
       if (pair) el.innerHTML = pair[idx];
     });
+    placeholderEls.forEach(function(el){
+      var key = el.getAttribute("data-i18n-placeholder");
+      var pair = dict[key];
+      if (pair) el.setAttribute("placeholder", pair[idx]);
+    });
     buttons.forEach(function(b){
       b.setAttribute("aria-pressed", b.getAttribute("data-set-lang") === lang ? "true" : "false");
     });
     document.documentElement.setAttribute("lang", lang);
   }
+
   var PAGE_LANG = document.documentElement.getAttribute("lang") === "en" ? "en" : "es";
   var EN_SLUGS = {"eventos":"events","equipos":"teams","colaboraciones":"collaborations","nosotros":"about","contacto":"contact"};
   function counterpart(lang){
@@ -543,7 +532,6 @@
     });
   });
 
-  /* ---- subtle scroll-reveal (respects prefers-reduced-motion) ---- */
   var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!prefersReduced && 'IntersectionObserver' in window) {
     var revealEls = document.querySelectorAll('section .wrap > *, .offer, .pillar-card, .quote-card');
@@ -558,6 +546,57 @@
     }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
     revealEls.forEach(function(el){ io.observe(el); });
   }
+})();
+
+(function(){
+  var HTG_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbx9MVm0_SrdI1KL9INIBYo6wltnUe-H1qwrU2Bn_bE2ixbDipDCZRjshluKX2KmPeKvTA/exec';
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  var status = document.getElementById('contactStatus');
+  function currentLang(){
+    return document.documentElement.getAttribute('lang') === 'en' ? 'en' : 'es';
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var lang = currentLang();
+    var cType = form.cType.value, cName = form.cName.value, cCompany = form.cCompany.value, cEmail = form.cEmail.value, cPhone = form.cPhone.value, cMsg = form.cMsg.value;
+    var lines = lang === 'en' ? [
+      'Project type: ' + cType,
+      'Name: ' + cName,
+      'Company: ' + (cCompany || '-'),
+      'Email: ' + cEmail,
+      'Phone: ' + (cPhone || '-'),
+      'Message: ' + (cMsg || '-')
+    ] : [
+      'Tipo de proyecto: ' + cType,
+      'Nombre: ' + cName,
+      'Empresa: ' + (cCompany || '-'),
+      'Email: ' + cEmail,
+      'Teléfono: ' + (cPhone || '-'),
+      'Mensaje: ' + (cMsg || '-')
+    ];
+    var subject = lang === 'en' ? 'New contact form via happytogathernow.com' : 'Nuevo contacto desde happytogathernow.com';
+    var body = lines.join('\n');
+    var fields = lines.map(function(l){ var i = l.indexOf(': '); return [l.slice(0, i), l.slice(i + 2)]; });
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
+    if (status) status.textContent = lang === 'en' ? 'Sending...' : 'Enviando...';
+    fetch(HTG_FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ form: 'contacto', lang: lang, subject: subject, body: body, fields: fields, page: location.href })
+    })
+      .then(function(r){ return r.json(); })
+      .then(function(res){
+        if (!res || !res.ok) throw new Error('failed');
+        if (status) status.textContent = lang === 'en' ? 'Thank you! We received your message and will get back to you soon.' : '\u00a1Gracias! Hemos recibido tu mensaje y te responderemos pronto.';
+        form.reset();
+      })
+      .catch(function(){
+        if (status) status.textContent = lang === 'en' ? 'Something went wrong. Please try again or email us at happytogathernow@gmail.com.' : 'Algo ha fallado. Int\u00e9ntalo de nuevo o escr\u00edbenos a happytogathernow@gmail.com.';
+      })
+      .then(function(){ if (btn) btn.disabled = false; });
+  });
 })();
 </script>
 <script>
