@@ -13,6 +13,9 @@
 <title>Contacto | Happy to Gather</title>
 <meta name="description" content="Hablemos: team building, colaboraciones, sponsors o si quieres llevar Happy to Gather a tu ciudad. Te respondemos personalmente.">
 <link rel="canonical" href="https://happytogathernow.com/contacto.html">
+<link rel="alternate" hreflang="es" href="https://happytogathernow.com/contacto.html">
+<link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/contacto.html">
+<link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/contacto.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://happytogathernow.com/contacto.html">
 <meta property="og:title" content="Contacto | Happy to Gather">
@@ -486,36 +489,32 @@
       b.setAttribute("aria-pressed", b.getAttribute("data-set-lang") === lang ? "true" : "false");
     });
     document.documentElement.setAttribute("lang", lang);
-    syncInternalLinks(lang);
   }
 
-  var initial = "es";
+  var PAGE_LANG = document.documentElement.getAttribute("lang") === "en" ? "en" : "es";
+  function counterpart(lang){
+    var file = window.location.pathname.split("/").pop() || "index.html";
+    var path = (lang === "en" ? "/en/" : "/") + (file === "index.html" ? "" : file);
+    return path + window.location.hash;
+  }
   try {
     var params = new URLSearchParams(window.location.search);
     var fromUrl = params.get("lang");
-    if (!fromUrl) {
-      try {
-        var topParams = new URLSearchParams(window.top.location.search);
-        fromUrl = topParams.get("lang");
-      } catch(e2) {}
+    if (fromUrl === "es" || fromUrl === "en") {
+      if (fromUrl !== PAGE_LANG) { window.location.replace(counterpart(fromUrl)); return; }
+      params.delete("lang");
+      var qs = params.toString();
+      window.history.replaceState(null, "", window.location.pathname + (qs ? "?" + qs : "") + window.location.hash);
     }
-    var stored = localStorage.getItem(LANG_KEY);
-    if (fromUrl === "es" || fromUrl === "en") initial = fromUrl;
-    else if (stored === "es" || stored === "en") initial = stored;
   } catch(e){}
 
-  apply(initial);
+  apply(PAGE_LANG);
 
   buttons.forEach(function(b){
     b.addEventListener("click", function(){
       var lang = b.getAttribute("data-set-lang");
-      apply(lang);
       try { localStorage.setItem(LANG_KEY, lang); } catch(e){}
-      try {
-        var url = new URL(window.location.href);
-        url.searchParams.set("lang", lang);
-        window.history.replaceState(null, "", url.toString());
-      } catch(e){}
+      if (lang !== PAGE_LANG) window.location.href = counterpart(lang);
     });
   });
 
@@ -541,7 +540,7 @@
   if (!form) return;
   var status = document.getElementById('contactStatus');
   function currentLang(){
-    try { return localStorage.getItem('htg_site_lang') === 'en' ? 'en' : 'es'; } catch(e){ return 'es'; }
+    return document.documentElement.getAttribute('lang') === 'en' ? 'en' : 'es';
   }
   form.addEventListener('submit', function(e){
     e.preventDefault();

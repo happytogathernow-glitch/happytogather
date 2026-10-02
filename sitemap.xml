@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://happytogathernow.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/"/>
+  </url>
+  <url>
+    <loc>https://happytogathernow.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/"/>
   </url>
   <url>
     <loc>https://happytogathernow.com/eventos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/eventos.html"/>
+  </url>
+  <url>
+    <loc>https://happytogathernow.com/en/eventos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/eventos.html"/>
   </url>
   <url>
     <loc>https://happytogathernow.com/equipos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/equipos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/equipos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/equipos.html"/>
+  </url>
+  <url>
+    <loc>https://happytogathernow.com/en/equipos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/equipos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/equipos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/equipos.html"/>
   </url>
   <url>
     <loc>https://happytogathernow.com/colaboraciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/colaboraciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/colaboraciones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/colaboraciones.html"/>
+  </url>
+  <url>
+    <loc>https://happytogathernow.com/en/colaboraciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/colaboraciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/colaboraciones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/colaboraciones.html"/>
   </url>
   <url>
     <loc>https://happytogathernow.com/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/nosotros.html"/>
+  </url>
+  <url>
+    <loc>https://happytogathernow.com/en/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/nosotros.html"/>
   </url>
   <url>
     <loc>https://happytogathernow.com/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/contacto.html"/>
+  </url>
+  <url>
+    <loc>https://happytogathernow.com/en/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://happytogathernow.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/contacto.html"/>
   </url>
 </urlset>
