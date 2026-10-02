@@ -902,10 +902,19 @@
   }
 
   var PAGE_LANG = document.documentElement.getAttribute("lang") === "en" ? "en" : "es";
+  var EN_SLUGS = {"eventos":"events","equipos":"teams","colaboraciones":"collaborations","nosotros":"about","contacto":"contact"};
   function counterpart(lang){
-    var file = window.location.pathname.split("/").pop() || "index.html";
-    var path = (lang === "en" ? "/en/" : "/") + (file === "index.html" ? "" : file);
-    return path + window.location.hash;
+    var name = (window.location.pathname.split("/").pop() || "index").replace(/\.html$/, "");
+    var target = "";
+    if (name !== "index") {
+      if (lang === "en") target = (EN_SLUGS[name] || name) + ".html";
+      else {
+        var es = name;
+        for (var k in EN_SLUGS) { if (EN_SLUGS[k] === name) es = k; }
+        target = es + ".html";
+      }
+    }
+    return (lang === "en" ? "/en/" : "/") + target + window.location.hash;
   }
   try {
     var params = new URLSearchParams(window.location.search);
