@@ -16,6 +16,54 @@
 <link rel="alternate" hreflang="es" href="https://happytogathernow.com/nosotros.html">
 <link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/about.html">
 <link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/nosotros.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Quién está detrás de Happy to Gather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Happy to Gather fue fundado por Ariela y Noel, una pareja que descubrió lo difícil que puede ser crear nuevas amistades al mudarse a otra ciudad. A partir de su propia experiencia en Barcelona, decidieron crear espacios donde conocer gente y conectar fuera más fácil. Así nació Happy to Gather en 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo nació la idea de Happy to Gather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nació de una necesidad que nosotros mismos habíamos sentido: encontrar conexiones auténticas en una ciudad nueva. Nos dimos cuenta de que muchas personas querían conocer gente, pero no siempre encontraban espacios donde hacerlo de forma natural. Decidimos crear esas experiencias nosotros mismos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué se basan las actividades de Happy to Gather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nuestras actividades se diseñan alrededor de cinco pilares de conexión humana: sentirse seguro, encontrar puntos en común, compartir experiencias, ser auténtico y sentirse digno de conexión. Estos principios nos ayudan a crear espacios donde las personas puedan abrirse y conocerse mejor. No dejamos la conexión al azar: creamos las condiciones para que pueda surgir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la misión de Happy to Gather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nuestra misión es hacer que la conexión humana sea más accesible en la vida cotidiana. Queremos que conocer gente nueva, construir amistades y sentirse parte de una comunidad vuelva a ser algo natural. Empezamos en Barcelona, pero soñamos con llevar estas experiencias a personas de todo el mundo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo puedo convertirme en facilitador de Happy to Gather en mi ciudad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puedes contactarnos si te apasiona conectar personas y te gustaría organizar experiencias en tu ciudad. Buscamos personas con facilidad para dinamizar grupos y ganas de crear comunidad. Cuéntanos dónde vives y por qué te gustaría formar parte del proyecto."
+      }
+    }
+  ]
+}
+</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Nosotros | Happy to Gather">
 <meta property="og:description" content="La historia detrás de Happy to Gather: por qué creamos experiencias de conexión humana real en Barcelona, y los pilares que sostienen cada una.">
@@ -305,6 +353,14 @@
     .hero-collage .base-photo{max-width:70%;}
     .hero-collage .cutout{width:52%;}
   }
+.faq{display:grid;gap:14px;max-width:760px;}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;}
+.faq summary{cursor:pointer;font-weight:700;font-family:"Bricolage Grotesque",sans-serif;font-size:1.02rem;list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";float:right;color:var(--ink-soft);font-weight:400;}
+.faq details[open] summary::after{content:"–";}
+.faq p{color:var(--ink-soft);margin:12px 0 0;font-size:0.98rem;}
+.faq summary h3{display:inline;font:inherit;letter-spacing:inherit;line-height:1.35;}
 </style>
 
 <header>
@@ -499,6 +555,37 @@
             <span id="facSurveyStatus"></span>
           </div>
         </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Sobre nosotros</span>
+        <h2 class="section-title">Preguntas frecuentes</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary><h3>¿Quién está detrás de Happy to Gather?</h3></summary>
+          <p>Happy to Gather fue fundado por Ariela y Noel, una pareja que descubrió lo difícil que puede ser crear nuevas amistades al mudarse a otra ciudad. A partir de su propia experiencia en Barcelona, decidieron crear espacios donde conocer gente y conectar fuera más fácil. Así nació Happy to Gather en 2025.</p>
+        </details>
+        <details>
+          <summary><h3>¿Cómo nació la idea de Happy to Gather?</h3></summary>
+          <p>Nació de una necesidad que nosotros mismos habíamos sentido: encontrar conexiones auténticas en una ciudad nueva. Nos dimos cuenta de que muchas personas querían conocer gente, pero no siempre encontraban espacios donde hacerlo de forma natural. Decidimos crear esas experiencias nosotros mismos.</p>
+        </details>
+        <details>
+          <summary><h3>¿En qué se basan las actividades de Happy to Gather?</h3></summary>
+          <p>Nuestras actividades se diseñan alrededor de cinco pilares de conexión humana: sentirse seguro, encontrar puntos en común, compartir experiencias, ser auténtico y sentirse digno de conexión. Estos principios nos ayudan a crear espacios donde las personas puedan abrirse y conocerse mejor. No dejamos la conexión al azar: creamos las condiciones para que pueda surgir.</p>
+        </details>
+        <details>
+          <summary><h3>¿Cuál es la misión de Happy to Gather?</h3></summary>
+          <p>Nuestra misión es hacer que la conexión humana sea más accesible en la vida cotidiana. Queremos que conocer gente nueva, construir amistades y sentirse parte de una comunidad vuelva a ser algo natural. Empezamos en Barcelona, pero soñamos con llevar estas experiencias a personas de todo el mundo.</p>
+        </details>
+        <details>
+          <summary><h3>¿Cómo puedo convertirme en facilitador de Happy to Gather en mi ciudad?</h3></summary>
+          <p>Puedes contactarnos si te apasiona conectar personas y te gustaría organizar experiencias en tu ciudad. Buscamos personas con facilidad para dinamizar grupos y ganas de crear comunidad. Cuéntanos dónde vives y por qué te gustaría formar parte del proyecto.</p>
+        </details>
       </div>
     </div>
   </section>

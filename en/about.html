@@ -17,6 +17,54 @@
 <link rel="alternate" hreflang="es" href="https://happytogathernow.com/nosotros.html">
 <link rel="alternate" hreflang="en" href="https://happytogathernow.com/en/about.html">
 <link rel="alternate" hreflang="x-default" href="https://happytogathernow.com/nosotros.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is behind Happy to Gather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Happy to Gather was founded by Ariela and Noel, a couple who discovered how hard it can be to make new friends after moving to another city. Based on their own experience in Barcelona, they decided to create spaces where meeting people and connecting would be easier. That's how Happy to Gather was born in 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How did the idea for Happy to Gather come about?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It came from a need we had felt ourselves: finding genuine connections in a new city. We realized that many people wanted to meet others, but couldn't always find places to do so naturally. So we decided to create those experiences ourselves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Happy to Gather's activities based on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our activities are designed around five pillars of human connection: feeling safe, finding common ground, sharing experiences, being authentic and feeling worthy of connection. These principles help us create spaces where people can open up and get to know each other better. We don't leave connection to chance: we create the conditions for it to happen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Happy to Gather's mission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our mission is to make human connection more accessible in everyday life. We want meeting new people, building friendships and feeling part of a community to feel natural again. We started in Barcelona, but we dream of bringing these experiences to people all over the world."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I become a Happy to Gather facilitator in my city?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Get in touch if you're passionate about connecting people and would like to host experiences in your city. We're looking for people who are good at leading groups and eager to build community. Tell us where you live and why you'd like to be part of the project."
+      }
+    }
+  ]
+}
+</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="About Us | Happy to Gather">
 <meta property="og:description" content="The story behind Happy to Gather: why we create experiences of real human connection in Barcelona, and the pillars behind each one.">
@@ -306,6 +354,14 @@
     .hero-collage .base-photo{max-width:70%;}
     .hero-collage .cutout{width:52%;}
   }
+.faq{display:grid;gap:14px;max-width:760px;}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;}
+.faq summary{cursor:pointer;font-weight:700;font-family:"Bricolage Grotesque",sans-serif;font-size:1.02rem;list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";float:right;color:var(--ink-soft);font-weight:400;}
+.faq details[open] summary::after{content:"–";}
+.faq p{color:var(--ink-soft);margin:12px 0 0;font-size:0.98rem;}
+.faq summary h3{display:inline;font:inherit;letter-spacing:inherit;line-height:1.35;}
 </style>
 
 <header>
@@ -500,6 +556,37 @@
             <span id="facSurveyStatus"></span>
           </div>
         </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">About us</span>
+        <h2 class="section-title">Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary><h3>Who is behind Happy to Gather?</h3></summary>
+          <p>Happy to Gather was founded by Ariela and Noel, a couple who discovered how hard it can be to make new friends after moving to another city. Based on their own experience in Barcelona, they decided to create spaces where meeting people and connecting would be easier. That's how Happy to Gather was born in 2025.</p>
+        </details>
+        <details>
+          <summary><h3>How did the idea for Happy to Gather come about?</h3></summary>
+          <p>It came from a need we had felt ourselves: finding genuine connections in a new city. We realized that many people wanted to meet others, but couldn't always find places to do so naturally. So we decided to create those experiences ourselves.</p>
+        </details>
+        <details>
+          <summary><h3>What are Happy to Gather's activities based on?</h3></summary>
+          <p>Our activities are designed around five pillars of human connection: feeling safe, finding common ground, sharing experiences, being authentic and feeling worthy of connection. These principles help us create spaces where people can open up and get to know each other better. We don't leave connection to chance: we create the conditions for it to happen.</p>
+        </details>
+        <details>
+          <summary><h3>What is Happy to Gather's mission?</h3></summary>
+          <p>Our mission is to make human connection more accessible in everyday life. We want meeting new people, building friendships and feeling part of a community to feel natural again. We started in Barcelona, but we dream of bringing these experiences to people all over the world.</p>
+        </details>
+        <details>
+          <summary><h3>How can I become a Happy to Gather facilitator in my city?</h3></summary>
+          <p>Get in touch if you're passionate about connecting people and would like to host experiences in your city. We're looking for people who are good at leading groups and eager to build community. Tell us where you live and why you'd like to be part of the project.</p>
+        </details>
       </div>
     </div>
   </section>

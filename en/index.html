@@ -51,6 +51,54 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Happy to Gather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Happy to Gather is a human connection project that creates experiences for meeting people and building genuine relationships. We organize social events in Barcelona, team building activities and collaborations with communities and brands. Everything is designed to make connecting feel natural."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of experiences does Happy to Gather offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer social events, experiences for teams and connection activities for other events and communities. Every format combines guided activities, conversations and shared experiences. The goal is always the same: helping people truly connect."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Happy to Gather different from other events?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Happy to Gather, human connection is at the heart of the whole experience. We don't just bring people together in a room: we design activities that help break the ice, find common ground and spark genuine conversations. That makes meeting new people much easier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do Happy to Gather experiences take place?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our experiences started in Barcelona, where we still organize our social gatherings. We can also bring our activities to offices, event venues and other places, depending on what each group needs. We'd love to bring this way of connecting to many more cities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Happy to Gather for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For people, teams and communities who want to connect in a more genuine way. From someone who just moved to Barcelona to a company looking to strengthen relationships between colleagues. You don't need any previous experience, just a willingness to take part."
+      }
+    }
+  ]
+}
+</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Happy to Gather | Meet new people in Barcelona">
 <meta property="og:description" content="Social experiences in Barcelona where meeting new people feels easy and natural. No phones, no alcohol, just good conversations.">
@@ -613,6 +661,14 @@
     .hero-collage .base-photo{max-width:70%;}
     .hero-collage .cutout{width:52%;}
   }
+.faq{display:grid;gap:14px;max-width:760px;}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;}
+.faq summary{cursor:pointer;font-weight:700;font-family:"Bricolage Grotesque",sans-serif;font-size:1.02rem;list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";float:right;color:var(--ink-soft);font-weight:400;}
+.faq details[open] summary::after{content:"–";}
+.faq p{color:var(--ink-soft);margin:12px 0 0;font-size:0.98rem;}
+.faq summary h3{display:inline;font:inherit;letter-spacing:inherit;line-height:1.35;}
 </style>
 
 <header>
@@ -792,6 +848,37 @@
         <span class="pillar-icon ic-pink"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg></span>
         <p><strong data-i18n="ig_h">Follow us on Instagram</strong><br><span data-i18n="ig_p">Real photos and moments from every experience — @happytogather.now</span></p>
         <a class="btn btn-primary" href="https://www.instagram.com/happytogather.now" target="_blank" rel="noopener"><span data-i18n="ig_cta">Follow</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">The essentials</span>
+        <h2 class="section-title">Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary><h3>What is Happy to Gather?</h3></summary>
+          <p>Happy to Gather is a human connection project that creates experiences for meeting people and building genuine relationships. We organize social events in Barcelona, team building activities and collaborations with communities and brands. Everything is designed to make connecting feel natural.</p>
+        </details>
+        <details>
+          <summary><h3>What kind of experiences does Happy to Gather offer?</h3></summary>
+          <p>We offer social events, experiences for teams and connection activities for other events and communities. Every format combines guided activities, conversations and shared experiences. The goal is always the same: helping people truly connect.</p>
+        </details>
+        <details>
+          <summary><h3>How is Happy to Gather different from other events?</h3></summary>
+          <p>At Happy to Gather, human connection is at the heart of the whole experience. We don't just bring people together in a room: we design activities that help break the ice, find common ground and spark genuine conversations. That makes meeting new people much easier.</p>
+        </details>
+        <details>
+          <summary><h3>Where do Happy to Gather experiences take place?</h3></summary>
+          <p>Our experiences started in Barcelona, where we still organize our social gatherings. We can also bring our activities to offices, event venues and other places, depending on what each group needs. We'd love to bring this way of connecting to many more cities.</p>
+        </details>
+        <details>
+          <summary><h3>Who is Happy to Gather for?</h3></summary>
+          <p>For people, teams and communities who want to connect in a more genuine way. From someone who just moved to Barcelona to a company looking to strengthen relationships between colleagues. You don't need any previous experience, just a willingness to take part.</p>
+        </details>
       </div>
     </div>
   </section>
