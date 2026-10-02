@@ -39,9 +39,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Happy to Gather | Meet new people in Barcelona">
 <meta name="twitter:description" content="Social experiences in Barcelona where meeting new people feels easy and natural. No phones, no alcohol, just good conversations.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Inter";font-style:normal;font-display:swap;font-weight:100 900;src:url(/fonts/inter-latin-wght-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-display:swap;font-weight:200 800;src:url(/fonts/bricolage-grotesque-latin-opsz-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Permanent Marker";font-style:normal;font-display:swap;font-weight:400;src:url(/fonts/permanent-marker-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+</style>
 <style>
   :root{
     --bg: #FBF7F1;
@@ -608,7 +612,7 @@
         <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
       <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener"><span data-i18n="nav_cta">Upcoming events</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
   <div class="mobile-panel" id="mobilePanel">

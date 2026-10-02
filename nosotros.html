@@ -23,9 +23,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Nosotros | Happy to Gather">
 <meta name="twitter:description" content="La historia detrás de Happy to Gather: por qué creamos experiencias de conexión humana real en Barcelona, y los pilares que sostienen cada una.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Inter";font-style:normal;font-display:swap;font-weight:100 900;src:url(/fonts/inter-latin-wght-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-display:swap;font-weight:200 800;src:url(/fonts/bricolage-grotesque-latin-opsz-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Permanent Marker";font-style:normal;font-display:swap;font-weight:400;src:url(/fonts/permanent-marker-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+</style>
 <style>
   :root{
     --bg: #FBF7F1;
@@ -320,7 +324,7 @@
         <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
       </div>
       <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener"><span data-i18n="nav_cta">Próximos eventos</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
   <div class="mobile-panel" id="mobilePanel">
@@ -345,7 +349,7 @@
         <h1 class="headline"><span data-i18n="hero_tag">Creamos experiencias</span><br><span class="hero-tag" data-i18n="hero_line2">que se sienten reales.</span></h1>
         <p class="hero-sub" data-i18n="hero_sub">Estamos rodeados de gente. Pero cada vez cuesta más conectar de verdad. Por eso existe Happy to Gather.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:happytogathernow@gmail.com?cc=arigrubel@gmail.com"><span data-i18n="hero_cta1">Escríbenos</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="btn btn-primary" href="contacto.html"><span data-i18n="hero_cta1">Escríbenos</span></a>
         </div>
       </div>
       <div class="hero-photo-wrap">
@@ -507,7 +511,7 @@
         <h2 data-i18n="contact_h2">¿Empezamos?</h2>
         <p class="lede" data-i18n="contact_lede">Hablemos humano a humano sobre cómo llevar conexión real a tu equipo, tu comunidad o tu próximo evento.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:happytogathernow@gmail.com?cc=arigrubel@gmail.com"><span data-i18n="contact_cta1">Escríbenos</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="btn btn-primary" href="contacto.html"><span data-i18n="contact_cta1">Escríbenos</span></a>
           <a class="btn btn-ghost" href="https://wa.me/34624009916" target="_blank" rel="noopener">WhatsApp<svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         </div>
       </div>
@@ -710,7 +714,7 @@
       'Email/tel\u00e9fono: ' + fContact,
       'Ciudad: ' + fCity
     ];
-    var subject = lang === 'en' ? 'Facilitator interest \u2014 happytogather.es' : 'Interés en ser facilitador/a \u2014 happytogather.es';
+    var subject = lang === 'en' ? 'Facilitator interest \u2014 happytogathernow.com' : 'Interés en ser facilitador/a \u2014 happytogathernow.com';
     var body = lines.join('\n');
     var fields = lines.map(function(l){ var i = l.indexOf(': '); return [l.slice(0, i), l.slice(i + 2)]; });
     var btn = form.querySelector('button[type="submit"]');

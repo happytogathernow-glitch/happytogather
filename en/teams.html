@@ -24,9 +24,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Meaningful Team Building | Happy to Gather">
 <meta name="twitter:description" content="Team building experiences that strengthen communication and real trust within teams, at your office, remote or hybrid.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Inter";font-style:normal;font-display:swap;font-weight:100 900;src:url(/fonts/inter-latin-wght-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-display:swap;font-weight:200 800;src:url(/fonts/bricolage-grotesque-latin-opsz-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Permanent Marker";font-style:normal;font-display:swap;font-weight:400;src:url(/fonts/permanent-marker-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+</style>
 
 <style>
   :root{
@@ -298,7 +302,7 @@
         <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
       <a class="btn btn-primary" href="https://luma.com/happytogather" target="_blank" rel="noopener"><span data-i18n="nav_cta">Upcoming events</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button type="button" class="hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
   <div class="mobile-panel" id="mobilePanel">
@@ -317,7 +321,7 @@
         <h1 class="headline"><span class="hero-tag" data-i18n="hero_tag">More human teams.</span><br><span data-i18n="hero_line2">Stronger teams.</span></h1>
         <p class="hero-sub" data-i18n="hero_sub">We help companies build stronger teams through meaningful shared experiences.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:happytogathernow@gmail.com?cc=arigrubel@gmail.com"><span data-i18n="hero_cta1">I want to connect my team</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="btn btn-primary" href="#encuesta"><span data-i18n="hero_cta1">I want to connect my team</span></a>
           <a class="btn btn-ghost" href="#experiencias" data-i18n="hero_cta2">See our experiences</a>
           <a class="btn btn-ghost" href="#encuesta" data-i18n="hero_cta3">Help me with my challenge</a>
         </div>
@@ -564,7 +568,7 @@
         <h2 data-i18n="cta_h2">Let's create something meaningful together.</h2>
         <p class="lede" data-i18n="cta_lede">Whether it's a team-building experience, a creative collaboration or a fully custom workshop — let's talk.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:happytogathernow@gmail.com?cc=arigrubel@gmail.com"><span data-i18n="cta_btn1">I want to connect my team</span><svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="btn btn-primary" href="#encuesta"><span data-i18n="cta_btn1">I want to connect my team</span></a>
           <a class="btn btn-ghost" href="https://wa.me/34624009916" target="_blank" rel="noopener">WhatsApp<svg class="p-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         </div>
       </div>
@@ -840,7 +844,7 @@
       'Espacio: ' + q8,
       'Objetivos: ' + (goals || '-')
     ];
-    var subject = lang === 'en' ? 'New team request via happytogather.es' : 'Nueva consulta de equipo desde happytogather.es';
+    var subject = lang === 'en' ? 'New team request via happytogathernow.com' : 'Nueva consulta de equipo desde happytogathernow.com';
     var body = lines.join('\n');
     var fields = lines.map(function(l){ var i = l.indexOf(': '); return [l.slice(0, i), l.slice(i + 2)]; });
     var btn = form.querySelector('button[type="submit"]');
